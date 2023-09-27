@@ -1,5 +1,5 @@
 @login
-Feature:User Login
+Feature: User Login
 
   Background: 
     Given a user is on the home page
@@ -17,3 +17,13 @@ Feature:User Login
     Examples: 
       | email                     | password   |
       | prabuchinnasamy@gmail.com | mayusri*1A |
+
+    @invalidUserNameAndPassword
+    Examples: 
+      | email                        | password     |
+      | prabuchinnasamy@gmailprs.com | mayusri*1A55 |
+
+    @invalidUser
+    Examples: 
+      | email                       | password   |
+      | prabuchinnasamy@gm22ail.com | mayusri*1A |
