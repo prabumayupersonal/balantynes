@@ -18,7 +18,7 @@ Feature: User Login
       | email                     | password   |
       | prabuchinnasamy@gmail.com | mayusri*1A |
 
-    @invalid
+    @invalidUserNameAndPassword
     Examples: 
       | email                        | password     |
       | prabuchinnasamy@gmailprs.com | mayusri*1A55 |
