@@ -27,3 +27,8 @@ Feature: User Login
     Examples: 
       | email                       | password   |
       | prabuchinnasamy@gm22ail.com | mayusri*1A |
+
+    @invalidPass
+    Examples: 
+      | email                     | password       |
+      | prabuchinnasamy@gmail.com | mayusri*1Adddd |
