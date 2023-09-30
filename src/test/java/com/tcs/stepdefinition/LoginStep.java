@@ -12,6 +12,8 @@ public class LoginStep {
 
 	@Given("a user is on the home page")
 	public void aUserIsOnTheHomePage() {
+				homePage.gotoHomePage();
+
 	}
 
 	@When("user clcik login link")
